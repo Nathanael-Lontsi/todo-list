@@ -1,27 +1,64 @@
-body {
-  display: flex;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+main {
   align-items: center;
-  justify-content: center;
+  display: flex;
   height: 100vh;
+  justify-content: center;
 }
 
-.main {
+.container {
+  background: paleturquoise;
+  height: 100%;
+  width: 50%;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+}
+
+.list {
   display: flex;
-  gap: 10px;
-  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
-button {
-  cursor: pointer;
-  height: 40px;
-  width: 40px;
-  border-radius: 40px;
-  border: none;
+input {
+  border: 1px solid lightgrey;
+  font-size: 15px;
+  padding-left: 10px;
+  width: 70%;
+}
+
+.addBtn {
   background-color: sandybrown;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  font-size: 15px;
+  height: 40px;
+  width: 100px;
 }
 
-span {
-  font-size: 20px;
-  font-weight: bold;
+.addBtn:hover {
+  background: tomato;
 }
 
+.myList {
+  font-size: 18px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+/* .deleteBtn {
+  background: red;
+  font-style: 18px;
+  padding: 2px 4px;
+} */

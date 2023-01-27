@@ -1,31 +1,13 @@
 import './styles/styles.css';
 
-const plusBtn = document.querySelector('.plus');
-const minusBtn = document.querySelector('.minus');
-const textContainer = document.querySelector('span');
+const input = document.getElementById('myInput');
+const add = document.querySelector('.addBtn');
+const list = document.querySelector('.myList');
 
-let data = 0;
-
-function add() {
-  const value = Math.floor(Math.random() * 1000);
-  data = Math.max(data, value);
-  return value;
+function todoList() {
+  const text = input.value;
+  list.innerHTML += `${text} <br> <br>`;
 }
-
-function sub() {
-  const value = Math.floor(Math.random() * 1000);
-  data = Math.min(data, value);
-  return value;
-}
-
-function displayValue(now, text = data) {
-  textContainer.innerHTML = `${text} (${now})`;
-}
-
-plusBtn.addEventListener('click', () => {
-  displayValue(add());
-});
-
-minusBtn.addEventListener('click', () => {
-  displayValue(sub());
+add.addEventListener('click', () => {
+  todoList();
 });
