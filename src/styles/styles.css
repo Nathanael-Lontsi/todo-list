@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -57,8 +57,9 @@ input {
   margin-top: 20px;
 }
 
-/* .deleteBtn {
+.deleteBtn {
   background: red;
   font-style: 18px;
   padding: 2px 4px;
-} */
+}
+ */
